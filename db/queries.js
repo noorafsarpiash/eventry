@@ -16,9 +16,18 @@ async function createUser(user){
 }
 
 
+async function fundUserByCredentials(credentials){
+    const user = await userModel.findOne(credentials).lean();
+    if(user){
+        return replaceMongoIdInArray(user);
+    }
+    return null;
+}
+
 export {
     getAllEvents,
     getEventById,
     createUser,
+    fundUserByCredentials
  
 }
