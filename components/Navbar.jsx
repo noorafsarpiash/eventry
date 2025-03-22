@@ -1,8 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { SignInOut } from "./auth/SigninOut";
-
+import SignInOut from "./auth/SignInOut";
 const Navbar = () => {
   return (
     <nav>

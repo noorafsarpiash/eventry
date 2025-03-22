@@ -18,7 +18,7 @@ const schema = new Schema({
     type: String
   },
   bio: {
-  
+    required: true,
     type: String
   }
 });

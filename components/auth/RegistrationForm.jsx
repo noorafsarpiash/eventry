@@ -1,31 +1,30 @@
-import { registerUser } from "@/app/actions"
+import { registerUser } from "@/app/actions";
 
 const RegistrationForm = () => {
     return (
         <form className="login-form" action={registerUser}>
-
             <div>
-                <label Htmlfor="name">Full Name</label>
+                <label htmlFor="name">Full Name</label>
                 <input type="text" name="name" id="name" />
             </div>
 
             <div>
-                <label Htmlfor="email">Email Address</label>
+                <label htmlFor="email">Email Address</label>
                 <input type="email" name="email" id="email" />
             </div>
 
             <div>
-                <label Htmlfor="password">Password</label>
+                <label htmlFor="password">Password</label>
                 <input type="password" name="password" id="password" />
             </div>
 
             <div>
-                <label Htmlfor="phone">Phone Number</label>
+                <label htmlFor="phone">Phone Number</label>
                 <input type="tel" name="phone" id="phone" />
             </div>
 
             <div>
-                <label Htmlfor="bio">Bio</label>
+                <label htmlFor="bio">Bio</label>
                 <input className="min-h-16" type="text" name="bio" id="bio" />
             </div>
 
@@ -36,7 +35,7 @@ const RegistrationForm = () => {
                 Register
             </button>
         </form>
-    )
-}
+    );
+};
 
-export default RegistrationForm
+export default RegistrationForm;
